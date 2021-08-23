@@ -1,0 +1,171 @@
+body {
+  @include body_base;
+}
+
+a {
+  @include a_base;
+}
+
+li {
+  @include li_base;
+}
+.top {
+  .slick-slider {
+    margin: 0;
+    padding: 0;
+    img {
+      @include img_max;
+    }
+  }
+  .slide-animation {
+    animation: fadezoom 8s 0s forwards;
+  }
+  @keyframes fadezoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  .slide {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto; /* 中央揃え */
+    position: relative;
+
+    .item {
+      @include background-img;
+      height: 100vh;
+      position: absolute;
+    }
+  }
+  .top_wrap {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 35vh;
+    line-height: 2;
+    z-index: 100;
+
+    h2 {
+      height: 150px;
+      font-family: "Parisienne", cursive;
+      font-weight: 400;
+      font-size: 100px;
+      color: $cwhite;
+    }
+    p {
+      font-weight: 400;
+      color: $cwhite;
+    }
+  }
+}
+
+.siki {
+  position: relative;
+  &_wrap {
+    position: relative;
+    @include img_viewport_max;
+    background: url(../images/spring/sakura.jpg) no-repeat center;
+
+    .siki_inner {
+      margin-top: 22vh;
+      margin-left: 100px;
+      padding: 60px;
+      background-color: $cwhite;
+      float: left;
+      opacity: 0.8;
+      line-height: 2;
+      z-index: 1;
+
+      &_title {
+        text-align: center;
+        margin-bottom: 33px;
+        font-size: 17px;
+
+        small {
+          font-family: "Parisienne", cursive;
+          font-weight: 400;
+          letter-spacing: 1px;
+          font-size: 13px;
+        }
+      }
+      &_subtitle {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.spring,
+.summer,
+.autumn,
+.winter {
+  position: relative;
+  &_wrap {
+    position: relative;
+    @include img_viewport_max;
+    z-index: 10;
+
+    .title {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      margin-top: 35vh;
+      line-height: 2;
+      z-index: 3;
+
+      h2 {
+        font-family: "Parisienne", cursive;
+        font-weight: 400;
+        letter-spacing: 6px;
+        font-size: 100px;
+        color: $cwhite;
+      }
+
+      .view_photos {
+        padding: 15px 40px;
+        margin: 0 auto;
+        border: solid 1px $cwhite;
+        opacity: 1;
+        border-radius: 30px;
+        color: $cwhite;
+        z-index: 50;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0) 48%,
+          #8483d3 51%,
+          #83c4d1 80%,
+          #82ceb3 100%
+        );
+        background-size: 200% auto;
+        transition: 0.2s;
+      }
+      .view_photos:hover {
+        background-position: right center;
+      }
+    }
+  }
+}
+.spring {
+  &_wrap {
+    background: url(../images/spring/haru.jpg) no-repeat center;
+  }
+}
+.summer {
+  &_wrap {
+    background: url(../images/summer/summer.jpg) no-repeat center;
+  }
+}
+.autumn {
+  &_wrap {
+    background: url(../images/autumn/fall.jpg) no-repeat center;
+  }
+}
+.winter {
+  &_wrap {
+    background: url(../images/winter/fuyu.jpg) no-repeat center;
+  }
+}

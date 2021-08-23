@@ -1,7 +1,5 @@
 "use strict";
 
-
-
 // スクロールで１ページ変わる
 $.scrollify({
 	section : ".box",
@@ -11,3 +9,5 @@ $.scrollify({
 	scrollSpeed: 300,
 });
 
+
+$.scrollify({ section: ".area" });

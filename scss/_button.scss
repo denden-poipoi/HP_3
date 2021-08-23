@@ -1,0 +1,19 @@
+
+.button {
+  text-align: center;
+
+  &_submit {
+    padding: 10px 70px;
+    margin: 50px 0 120px 0;
+    font-weight: bold;
+    border: solid 2px;
+         color: $cwhite;
+     background-color: $cBlack;
+  }
+   &_submit:hover {
+     color: $cBlack;
+     background-color: $cwhite;
+     transition: 0.2s;
+   }
+
+}

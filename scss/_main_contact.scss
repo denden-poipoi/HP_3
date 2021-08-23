@@ -1,0 +1,70 @@
+body {
+  @include body_base;
+  display: block;
+  background: linear-gradient(
+    to right,
+    #fefdfd 0%,
+    #f3c9c9 20%,
+    #f89aad 51%,
+    #f986a0 80%,
+    #e99c9c 100%
+  );
+}
+
+a {
+  @include a_base;
+}
+
+li {
+  @include li_base;
+}
+.bg {
+  background-color: $cwhite;
+  width: 80vw;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.title {
+  @include main-title;
+}
+.contact {
+  padding: 100px;
+  padding-bottom: 200px;
+
+  .form {
+    width: 70%;
+    margin: 0 auto;
+
+    div {
+      margin: 20px;
+      padding: 5px;
+      label {
+        display: inline-block;
+        width: 30%;
+        font-size: 20px;
+        line-height: 2;
+      }
+
+      input,
+      textarea {
+        box-sizing: border-box;
+        border: solid $cBlack 1px;
+        width: 65%;
+        height: 50px;
+        margin-bottom: 15px;
+        background-color: $cGray;
+      }
+
+      input {
+        padding: 6px;
+      }
+
+      textarea {
+        vertical-align: top;
+        height: 120px;
+      }
+    }
+  }
+}

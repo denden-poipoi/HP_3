@@ -1,0 +1,156 @@
+body {
+@include body_base;
+  display: block;
+}
+
+a {
+@include a_base;
+}
+
+li {
+@include li_base;
+}
+.title {
+@include main-title;
+  margin-top: 60;
+}
+.seasons {
+  margin: 10px;
+  margin-left: 100px;
+
+  h4 {
+    font-size: 60px;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+  }
+}
+.spring_ttl {
+  h4 {
+    color: pink;
+  }
+}
+.summer_ttl {
+  h4 {
+    color: orange;
+  }
+}
+.autumn_ttl {
+  h4 {
+    color: brown;
+  }
+}
+.winter_ttl {
+  h4 {
+    color: #c7d7eb;
+  }
+}
+.spring,
+.summer,
+.autumn,
+.winter {
+  .seasons_all {
+    .seasons_list {
+      display: flex;
+      justify-content: space-between;
+      .seasons_item {
+        width: 270px;
+        height: auto;
+        margin: 100px 30px;
+        -webkit-box-shadow: 10px 10px 20px $cshadow;
+        box-shadow: 10px 10px 20px $cshadow;
+        cursor: pointer;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+
+        .seasons_img {
+          display: contents;
+          width: 100%;
+          object-fit: cover;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .seasons_txt {
+          padding: 0 16px;
+        }
+
+        .seasons_ttl {
+          margin: 40px 0;
+          font-size: 18px;
+          line-height: 1;
+        }
+        .seasons_date {
+          font-size: 15px;
+          line-height: 1;
+          position: relative;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+          margin-bottom: 10px;
+        }
+      }
+      .seasons_item:hover {
+        -webkit-box-shadow: 0 0 0;
+        box-shadow: 0 0 0;
+        opacity: 0.7;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        -webkit-box-shadow: 10px 10px 20px $cshadow;
+        box-shadow: 10px 10px 20px $cshadow;
+      }
+    }
+
+    .slider-3 {
+      width: 90%;
+      margin: 0 auto;
+
+      .slick-arrow:before {
+        color: $cBlack;
+      }
+    }
+
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus {
+      background-color: $cshadow;
+      color:$cwhite;
+    }
+
+    .slick-prev:before {
+      content: "<";
+      opacity: 1;
+      font-size: 14px;
+    }
+    .slick-next:before {
+      content: ">";
+      opacity: 1;
+      font-size: 14px;
+    }
+
+    /*背景や位置の調整*/
+    .slick-prev {
+      left: -15px;
+      z-index: 1;
+      width: auto;
+      height: auto;
+      padding: 10px;
+      color: $cwhite;
+      transition: 0.4s;
+    }
+
+    .slick-next {
+      right: -15px;
+      width: auto;
+      height: auto;
+      padding: 10px;
+      transition: 0.4s;
+    }
+  }
+}
+footer div {
+  height: 200px;
+  width: 100%;
+  background-color: $cwhite;
+}

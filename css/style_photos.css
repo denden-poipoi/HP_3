@@ -1,0 +1,346 @@
+@charset "UTF-8";
+header {
+  z-index: 100;
+}
+
+header .navbar {
+  position: fixed;
+  z-index: 100;
+}
+
+header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  position: relative;
+  right: -1100px;
+  margin: 15px 0;
+  z-index: 100;
+}
+
+header .navbar ul li {
+  margin: 10px;
+  padding-right: 20px;
+}
+
+header .navbar ul li a {
+  color: #262500;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+header .navbar ul li a:hover {
+  opacity: 0.5;
+}
+
+header .navbar li:last-child {
+  margin-right: 0;
+}
+
+header .respons {
+  visibility: hidden;
+  height: 0;
+}
+
+header .drawer {
+  visibility: hidden;
+}
+
+.header2 {
+  width: 100%;
+  display: inline-block;
+}
+
+.header2 .header_all .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  position: relative;
+  margin: 15px 0;
+}
+
+.header2 .header_all .navbar ul li {
+  margin: 10px;
+  padding-right: 20px;
+}
+
+.header2 .header_all .navbar ul li a {
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.header2 .header_all .navbar ul li a:hover {
+  opacity: 0.5;
+}
+
+.header2 .header_all .navbar ul li:last-child {
+  border-right: none;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  top: -30px;
+  z-index: 1;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Noto Serif", serif;
+  line-height: 0;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #262500;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #262500;
+}
+
+li {
+  list-style: none;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  padding-top: 100px;
+  line-height: 2;
+  font-family: "Parisienne", cursive;
+  font-weight: bold;
+  font-size: 100px;
+  color: #262500;
+  margin-top: 60;
+}
+
+.seasons {
+  margin: 10px;
+  margin-left: 100px;
+}
+
+.seasons h4 {
+  font-size: 60px;
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+}
+
+.spring_ttl h4 {
+  color: pink;
+}
+
+.summer_ttl h4 {
+  color: orange;
+}
+
+.autumn_ttl h4 {
+  color: brown;
+}
+
+.winter_ttl h4 {
+  color: #c7d7eb;
+}
+
+.spring .seasons_all,
+.summer .seasons_all,
+.autumn .seasons_all,
+.winter .seasons_all {
+  /*背景や位置の調整*/
+}
+
+.spring .seasons_all .seasons_list,
+.summer .seasons_all .seasons_list,
+.autumn .seasons_all .seasons_list,
+.winter .seasons_all .seasons_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.spring .seasons_all .seasons_list .seasons_item,
+.summer .seasons_all .seasons_list .seasons_item,
+.autumn .seasons_all .seasons_list .seasons_item,
+.winter .seasons_all .seasons_list .seasons_item {
+  width: 270px;
+  height: auto;
+  margin: 100px 30px;
+  -webkit-box-shadow: 10px 10px 20px #ddd;
+  box-shadow: 10px 10px 20px #ddd;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.spring .seasons_all .seasons_list .seasons_item .seasons_img,
+.summer .seasons_all .seasons_list .seasons_item .seasons_img,
+.autumn .seasons_all .seasons_list .seasons_item .seasons_img,
+.winter .seasons_all .seasons_list .seasons_item .seasons_img {
+  display: contents;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.spring .seasons_all .seasons_list .seasons_item .seasons_img img,
+.summer .seasons_all .seasons_list .seasons_item .seasons_img img,
+.autumn .seasons_all .seasons_list .seasons_item .seasons_img img,
+.winter .seasons_all .seasons_list .seasons_item .seasons_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.spring .seasons_all .seasons_list .seasons_item .seasons_txt,
+.summer .seasons_all .seasons_list .seasons_item .seasons_txt,
+.autumn .seasons_all .seasons_list .seasons_item .seasons_txt,
+.winter .seasons_all .seasons_list .seasons_item .seasons_txt {
+  padding: 0 16px;
+}
+
+.spring .seasons_all .seasons_list .seasons_item .seasons_ttl,
+.summer .seasons_all .seasons_list .seasons_item .seasons_ttl,
+.autumn .seasons_all .seasons_list .seasons_item .seasons_ttl,
+.winter .seasons_all .seasons_list .seasons_item .seasons_ttl {
+  margin: 40px 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.spring .seasons_all .seasons_list .seasons_item .seasons_date,
+.summer .seasons_all .seasons_list .seasons_item .seasons_date,
+.autumn .seasons_all .seasons_list .seasons_item .seasons_date,
+.winter .seasons_all .seasons_list .seasons_item .seasons_date {
+  font-size: 15px;
+  line-height: 1;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-bottom: 10px;
+}
+
+.spring .seasons_all .seasons_list .seasons_item:hover,
+.summer .seasons_all .seasons_list .seasons_item:hover,
+.autumn .seasons_all .seasons_list .seasons_item:hover,
+.winter .seasons_all .seasons_list .seasons_item:hover {
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+  opacity: 0.7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 10px 10px 20px #ddd;
+  box-shadow: 10px 10px 20px #ddd;
+}
+
+.spring .seasons_all .slider-3,
+.summer .seasons_all .slider-3,
+.autumn .seasons_all .slider-3,
+.winter .seasons_all .slider-3 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.spring .seasons_all .slider-3 .slick-arrow:before,
+.summer .seasons_all .slider-3 .slick-arrow:before,
+.autumn .seasons_all .slider-3 .slick-arrow:before,
+.winter .seasons_all .slider-3 .slick-arrow:before {
+  color: #000;
+}
+
+.spring .seasons_all .slick-prev:hover,
+.spring .seasons_all .slick-prev:focus,
+.spring .seasons_all .slick-next:hover,
+.spring .seasons_all .slick-next:focus,
+.summer .seasons_all .slick-prev:hover,
+.summer .seasons_all .slick-prev:focus,
+.summer .seasons_all .slick-next:hover,
+.summer .seasons_all .slick-next:focus,
+.autumn .seasons_all .slick-prev:hover,
+.autumn .seasons_all .slick-prev:focus,
+.autumn .seasons_all .slick-next:hover,
+.autumn .seasons_all .slick-next:focus,
+.winter .seasons_all .slick-prev:hover,
+.winter .seasons_all .slick-prev:focus,
+.winter .seasons_all .slick-next:hover,
+.winter .seasons_all .slick-next:focus {
+  background-color: #ddd;
+  color: #fff;
+}
+
+.spring .seasons_all .slick-prev:before,
+.summer .seasons_all .slick-prev:before,
+.autumn .seasons_all .slick-prev:before,
+.winter .seasons_all .slick-prev:before {
+  content: "<";
+  opacity: 1;
+  font-size: 14px;
+}
+
+.spring .seasons_all .slick-next:before,
+.summer .seasons_all .slick-next:before,
+.autumn .seasons_all .slick-next:before,
+.winter .seasons_all .slick-next:before {
+  content: ">";
+  opacity: 1;
+  font-size: 14px;
+}
+
+.spring .seasons_all .slick-prev,
+.summer .seasons_all .slick-prev,
+.autumn .seasons_all .slick-prev,
+.winter .seasons_all .slick-prev {
+  left: -15px;
+  z-index: 1;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.spring .seasons_all .slick-next,
+.summer .seasons_all .slick-next,
+.autumn .seasons_all .slick-next,
+.winter .seasons_all .slick-next {
+  right: -15px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer div {
+  height: 200px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.button {
+  text-align: center;
+}
+
+.button_submit {
+  padding: 10px 70px;
+  margin: 50px 0 120px 0;
+  font-weight: bold;
+  border: solid 2px;
+  color: #fff;
+  background-color: #000;
+}
+
+.button_submit:hover {
+  color: #000;
+  background-color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
