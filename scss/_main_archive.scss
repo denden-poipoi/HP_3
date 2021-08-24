@@ -1,7 +1,12 @@
 body {
   @include body_base;
 }
-
+main {
+  display: inline-block;
+}
+html {
+  height: auto;
+}
 a {
   @include a_base;
 }
@@ -9,9 +14,8 @@ a {
 li {
   @include li_base;
 }
-.title {
+.blog_site_title {
   @include main-title;
-  margin-top: 60px;
 }
 .right {
   position: relative;
@@ -20,9 +24,9 @@ li {
 
   img {
     position: relative;
-    left: 100px;
+    left: 300px;
     margin: 200px;
-    width: 70vw;
+    width: 60vw;
     height: 650px;
     transition: 0.8s;
     z-index: 2;
@@ -36,9 +40,9 @@ li {
   .blog_title {
     position: relative;
     top: -510px;
-    left: 80px;
+    left: 250px;
     width: 300px;
-    height: 120px;
+    height: 200px;
     padding: 0 20px;
     text-align: left;
     z-index: 3;
@@ -46,14 +50,14 @@ li {
     h2 {
       font-size: 60px;
       width: 100%;
-      height: 60px;
+      height: 90px;
       text-shadow: 1px 2px 3px $cGray;
       z-index: 3;
     }
     h4 {
       font-size: 25px;
       width: 100%;
-      height: 50px;
+      height: 60px;
       z-index: 3;
     }
   }
@@ -80,9 +84,9 @@ li {
   margin: 0px;
   img {
     position: relative;
-    right: 100px;
+    right: 40px;
     margin: 200px;
-    width: 70vw;
+    width: 60vw;
     height: 650px;
     z-index: 2;
   }
@@ -93,10 +97,10 @@ li {
   }
   .blog_title {
     position: relative;
-    top: -510px;
+    top: -1600px;
     left: 1080px;
     width: 300px;
-    height: 120px;
+    height: 220px;
     padding: 0 20px;
     margin: 0px;
     text-align: left;
@@ -104,14 +108,14 @@ li {
     h2 {
       font-size: 60px;
       width: 100%;
-      height: 60px;
+      height: 90px;
       text-shadow: 3px 2px 3px $cGray;
       z-index: 3;
     }
     h4 {
       font-size: 25px;
       width: 100%;
-      height: 50px;
+      height: 60px;
       z-index: 3;
     }
   }
@@ -132,11 +136,9 @@ li {
     transform: scale(1, 1);
   }
 }
-
-footer div {
-  height: 200px;
-  width: 100%;
-  background-color: $cwhite;
+footer {
+  position: absolute; /*←絶対位置*/
+  bottom: 50px; /*下に固定*/
 }
 @media screen and (max-width: 1025px) {
   .right {
@@ -185,11 +187,12 @@ footer div {
   }
   .left {
     height: 350px;
+    padding-top: 80px;
     img {
       width: 50%;
       height: 250px;
       margin-bottom: 100px;
-      margin-top: 100px;
+      margin-top: 140px;
     }
     .blog_title {
       top: -230px;
@@ -203,17 +206,16 @@ footer div {
   }
 }
 @media screen and (max-width: 376px) {
-html{
-  overflow: auto;
-
-}
-body{
-  overflow: hidden;
-  min-width: 375px;
-}
-main{
-  height: 1800px;
-}
+  html {
+    overflow: auto;
+  }
+  body {
+    overflow: hidden;
+    min-width: 375px;
+  }
+  .blog_main {
+    height: 2050px;
+  }
   .title {
     font-size: 70px;
     height: 100px;
@@ -232,20 +234,19 @@ main{
       left: -100px;
       width: 70%;
       height: 180px;
-      margin-bottom: 100px;
-      margin-top: 100px;
+      margin-bottom: 30px;
+      margin-top: 30px;
       margin-right: auto;
-
     }
     .blog_title {
-      top: -190px;
+      top: -130px;
       left: -2px;
       margin: 0px;
       width: 180px;
       h2 {
         font-size: 30px;
       }
-      h4{
+      h4 {
         font-size: 15px;
         position: relative;
         top: -30px;
@@ -256,11 +257,12 @@ main{
     height: 250px;
     width: 100%;
     margin-right: 0px;
+    padding-top: 30px;
     img {
       width: 70%;
       height: 180px;
-      margin-bottom: 100px;
-      margin-top: 100px;
+      margin-bottom: 50px;
+      margin-top: 50px;
       margin-right: 0px;
       right: 180px;
       z-index: 30;
@@ -268,7 +270,7 @@ main{
     .blog_title {
       width: 180px;
       height: 70px;
-      top: -200px;
+      top: -140px;
       left: 220px;
       margin-right: 0px;
       padding: 0px;
@@ -294,14 +296,5 @@ main{
   }
   footer div {
     height: 0px;
-
-  }
-  .up_1{
-    position: relative;
-    top: -150px;
-  }
-  .up_2{
-    position: relative;
-    top: -300px;
   }
 }

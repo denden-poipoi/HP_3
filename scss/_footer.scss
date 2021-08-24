@@ -3,7 +3,7 @@ footer {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  top: -30px;
+  top: 30px;
   z-index: 50;
 }
 
@@ -13,7 +13,7 @@ footer {
   }
 }
 @media screen and (max-width: 376px) {
-  footer {
+  .contact_footer {
     width: 97%;
     z-index: 50;
   }

@@ -11,3 +11,4 @@ $.scrollify({
 
 
 $.scrollify({ section: ".area" });
+

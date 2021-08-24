@@ -14,7 +14,7 @@
   float: right;
   position: relative;
   right: -1100px;
-  margin: 15px 0;
+  margin: 35px 0;
   z-index: 100;
 }
 
@@ -46,153 +46,6 @@
   visibility: hidden;
 }
 
-.header2 {
-  z-index: 100;
-}
-
-.header2 .navbar {
-  position: fixed;
-  z-index: 100;
-}
-
-.header2 .navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  float: right;
-  position: relative;
-  right: -1100px;
-  top: -200px;
-  margin: 15px 0;
-  z-index: 100;
-}
-
-.header2 .navbar ul li {
-  margin: 10px;
-  padding-right: 20px;
-}
-
-.header2 .navbar ul li a {
-  color: #262500;
-  font-weight: 700;
-  font-size: 15px;
-}
-
-.header2 .navbar ul li a:hover {
-  opacity: 0.5;
-}
-
-.header2 .navbar li:last-child {
-  margin-right: 0;
-}
-
-.header2 .respons {
-  visibility: hidden;
-  height: 0;
-}
-
-.header2 .drawer {
-  visibility: hidden;
-}
-
-.header3 {
-  z-index: 100;
-}
-
-.header3 .navbar {
-  position: fixed;
-  z-index: 100;
-}
-
-.header3 .navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  float: right;
-  position: relative;
-  right: -1100px;
-  top: -60px;
-  margin: 15px 0;
-  z-index: 100;
-}
-
-.header3 .navbar ul li {
-  margin: 10px;
-  padding-right: 20px;
-}
-
-.header3 .navbar ul li a {
-  color: #262500;
-  font-weight: 700;
-  font-size: 15px;
-}
-
-.header3 .navbar ul li a:hover {
-  opacity: 0.5;
-}
-
-.header3 .navbar li:last-child {
-  margin-right: 0;
-}
-
-.header3 .respons {
-  visibility: hidden;
-  height: 0;
-}
-
-.header3 .drawer {
-  visibility: hidden;
-}
-
-.header4 {
-  z-index: 100;
-}
-
-.header4 .navbar {
-  position: fixed;
-  z-index: 100;
-}
-
-.header4 .navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  float: right;
-  position: relative;
-  right: -1100px;
-  top: -10px;
-  margin: 15px 0;
-  z-index: 100;
-}
-
-.header4 .navbar ul li {
-  margin: 10px;
-  padding-right: 20px;
-}
-
-.header4 .navbar ul li a {
-  color: #262500;
-  font-weight: 700;
-  font-size: 15px;
-}
-
-.header4 .navbar ul li a:hover {
-  opacity: 0.5;
-}
-
-.header4 .navbar li:last-child {
-  margin-right: 0;
-}
-
-.header4 .respons {
-  visibility: hidden;
-  height: 0;
-}
-
-.header4 .drawer {
-  visibility: hidden;
-}
-
 @media screen and (max-width: 1025px) {
   header .navbar ul {
     left: 650px;
@@ -207,7 +60,7 @@
 
 @media screen and (max-width: 376px) {
   header .navbar ul {
-    margin-top: 0px;
+    margin: 50px 0;
     left: 20px;
   }
   header .navbar ul li {
@@ -217,14 +70,6 @@
   header .navbar ul li a {
     font-size: 6px;
   }
-  .header3 {
-    position: relative;
-  }
-  .header3 ul li {
-    position: relative;
-    top: 60px;
-    z-index: 500;
-  }
 }
 
 footer {
@@ -232,7 +77,7 @@ footer {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  top: -30px;
+  top: 30px;
   z-index: 50;
 }
 
@@ -243,22 +88,26 @@ footer {
 }
 
 @media screen and (max-width: 376px) {
-  footer {
+  .contact_footer {
     width: 97%;
     z-index: 50;
   }
 }
 
-body {
+.contact_main {
   font-size: 15px;
   font-family: "Noto Serif", serif;
-  line-height: 0;
+  line-height: 2;
   letter-spacing: 1px;
   word-break: break-all;
   color: #262500;
   display: block;
+}
+
+.pink_bg {
   background: -webkit-gradient(linear, left top, right top, from(#fefdfd), color-stop(20%, #f3c9c9), color-stop(51%, #f89aad), color-stop(80%, #f986a0), to(#e99c9c));
   background: linear-gradient(to right, #fefdfd 0%, #f3c9c9 20%, #f89aad 51%, #f986a0 80%, #e99c9c 100%);
+  padding: 80px;
 }
 
 a {
@@ -270,7 +119,7 @@ li {
   list-style: none;
 }
 
-.bg {
+.contact_bg {
   background-color: #fff;
   width: 80vw;
   text-align: center;
@@ -281,7 +130,7 @@ li {
   margin-top: 200px;
 }
 
-.title {
+.contact_title {
   text-align: center;
   width: 100%;
   padding-top: 100px;
@@ -297,25 +146,25 @@ li {
   padding-bottom: 200px;
 }
 
-.contact .form {
+.contact .contact_form {
   width: 70%;
   margin: 0 auto;
 }
 
-.contact .form div {
+.contact .contact_form .contact_input {
   margin: 20px;
   padding: 5px;
 }
 
-.contact .form div label {
+.contact .contact_form .contact_input label {
   display: inline-block;
   width: 30%;
   font-size: 20px;
   line-height: 2;
 }
 
-.contact .form div input,
-.contact .form div textarea {
+.contact .contact_form .contact_input input,
+.contact .contact_form .contact_input textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: solid #000 1px;
@@ -325,53 +174,58 @@ li {
   background-color: #ECECEC;
 }
 
-.contact .form div input {
+.contact .contact_form .contact_input input {
   padding: 6px;
 }
 
-.contact .form div textarea {
+.contact .contact_form .contact_input textarea {
   vertical-align: top;
   height: 120px;
 }
 
 @media screen and (max-width: 1025px) {
-  .bg {
+  .contact_bg {
     width: 75vw;
   }
   .contact {
     padding: 50px;
   }
-  .contact .form {
+  .contact .contact_form {
     width: 90%;
     display: block;
     margin: 0 auto;
   }
-  .contact .form div {
+  .contact .contact_form .contact_input {
     margin: 20px 0;
     padding: 5px;
   }
-  .contact .form div label {
+  .contact .contact_form .contact_input label {
     display: inline-block;
     text-align: left;
     width: 100%;
     font-size: 30px;
   }
-  .contact .form div input {
+  .contact .contact_form .contact_input input {
     width: 100%;
     height: 80px;
   }
-  .contact .form div textarea {
+  .contact .contact_form .contact_input textarea {
     width: 100%;
     height: 200px;
   }
 }
 
 @media screen and (max-width: 376px) {
-  .bg {
-    width: 85vw;
-    padding-top: 70px;
+  .pink_bg {
+    padding: 40px 20px;
+    padding-bottom: 50px;
   }
-  .bg .title {
+  .contact_bg {
+    width: 100%;
+    padding-top: 70px;
+    margin-top: 150px;
+  }
+  .contact_bg .contact_title {
     display: unset;
     text-align: center;
     width: 100%;
@@ -385,26 +239,26 @@ li {
   .contact {
     padding: 10px;
   }
-  .contact .form {
+  .contact .contact_form {
     width: 100%;
     display: block;
     margin: 0px;
   }
-  .contact .form div {
+  .contact .contact_form .contact_input {
     margin: 20px 0;
     padding: 5px;
   }
-  .contact .form div label {
+  .contact .contact_form .contact_input label {
     display: inline-block;
     text-align: left;
     width: 100%;
     font-size: 30px;
   }
-  .contact .form div input {
+  .contact .contact_form .contact_input input {
     width: 100%;
     height: 80px;
   }
-  .contact .form div textarea {
+  .contact .contact_form .contact_input textarea {
     width: 100%;
     height: 200px;
   }

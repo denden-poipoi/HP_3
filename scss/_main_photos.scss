@@ -1,8 +1,9 @@
 body {
   @include body_base;
+}
+main {
   display: block;
 }
-
 a {
   @include a_base;
 }
@@ -10,9 +11,8 @@ a {
 li {
   @include li_base;
 }
-.title {
+.photos_title {
   @include main-title;
-  margin-top: 60;
 }
 .seasons {
   margin: 10px;
@@ -158,11 +158,12 @@ footer div {
   .title {
     font-size: 75px;
   }
-.autumn_ttl,.winter_ttl{
-  h4{
-    display: unset;
-    margin-left: 10px;
-    font-size: 50px;
+  .autumn_ttl,
+  .winter_ttl {
+    h4 {
+      display: unset;
+      margin-left: 10px;
+      font-size: 50px;
+    }
   }
-}
 }

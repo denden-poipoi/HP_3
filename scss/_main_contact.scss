@@ -1,6 +1,9 @@
-body {
+.contact_main {
   @include body_base;
   display: block;
+}
+.pink_bg{
+
   background: linear-gradient(
     to right,
     #fefdfd 0%,
@@ -8,9 +11,9 @@ body {
     #f89aad 51%,
     #f986a0 80%,
     #e99c9c 100%
-  );
+    );
+    padding:80px;
 }
-
 a {
   @include a_base;
 }
@@ -18,7 +21,7 @@ a {
 li {
   @include li_base;
 }
-.bg {
+.contact_bg {
   background-color: $cwhite;
   width: 80vw;
   text-align: center;
@@ -26,18 +29,18 @@ li {
   margin: 0 auto;
   margin-top: 200px;
 }
-.title {
+.contact_title {
   @include main-title;
 }
 .contact {
   padding: 100px;
   padding-bottom: 200px;
 
-  .form {
+  .contact_form {
     width: 70%;
     margin: 0 auto;
 
-    div {
+    .contact_input {
       margin: 20px;
       padding: 5px;
       label {
@@ -69,17 +72,17 @@ li {
   }
 }
 @media screen and (max-width: 1025px) {
-  .bg {
+  .contact_bg {
     width: 75vw;
   }
   .contact {
     padding: 50px;
 
-    .form {
+    .contact_form {
       width: 90%;
       display: block;
       margin: 0 auto;
-      div {
+      .contact_input {
         margin: 20px 0;
         padding: 5px;
         label {
@@ -102,11 +105,16 @@ li {
   }
 }
 @media screen and (max-width: 376px) {
-  .bg {
-    width: 85vw;
+  .pink_bg{
+    padding:40px 20px;
+    padding-bottom: 50px;
+}
+  .contact_bg {
+    width: 100%;
     padding-top: 70px;
+    margin-top: 150px;
 
-    .title{
+    .contact_title{
       display: unset;
       @include main-title_respnsive;
     }
@@ -114,11 +122,11 @@ li {
   .contact {
     padding: 10px;
 
-    .form {
+    .contact_form {
       width: 100%;
       display: block;
       margin: 0px;
-      div {
+      .contact_input {
         margin: 20px 0;
         padding: 5px;
         label {
