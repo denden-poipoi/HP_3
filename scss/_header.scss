@@ -1,4 +1,4 @@
-header {
+.header {
   z-index: 100;
   .navbar {
     position: fixed;
@@ -36,22 +36,25 @@ header {
     visibility: hidden;
   }
 }
-
 .header2 {
-  width: 100%;
-  display: inline-block;
-  .header_all {
-    .navbar ul {
+  z-index: 100;
+  .navbar {
+    position: fixed;
+    z-index: 100;
+    ul {
       display: flex;
       float: right;
       position: relative;
+      right: -1100px;
+      top: -200px;
       margin: 15px 0;
+      z-index: 100;
       li {
         margin: 10px;
         padding-right: 20px;
 
         a {
-          color: #000;
+          color: $cfont_color;
           font-weight: 700;
           font-size: 15px;
         }
@@ -59,9 +62,141 @@ header {
           opacity: 0.5;
         }
       }
-      li:last-child {
-        border-right: none;
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+  .respons {
+    visibility: hidden;
+    height: 0;
+  }
+  .drawer {
+    visibility: hidden;
+  }
+}
+.header3 {
+  z-index: 100;
+  .navbar {
+    position: fixed;
+    z-index: 100;
+    ul {
+      display: flex;
+      float: right;
+      position: relative;
+      right: -1100px;
+      top: -60px;
+      margin: 15px 0;
+      z-index: 100;
+      li {
+        margin: 10px;
+        padding-right: 20px;
+
+        a {
+          color: $cfont_color;
+          font-weight: 700;
+          font-size: 15px;
+        }
+        a:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+  .respons {
+    visibility: hidden;
+    height: 0;
+  }
+  .drawer {
+    visibility: hidden;
+  }
+}
+.header4 {
+  z-index: 100;
+  .navbar {
+    position: fixed;
+    z-index: 100;
+    ul {
+      display: flex;
+      float: right;
+      position: relative;
+      right: -1100px;
+      top: -10px;
+      margin: 15px 0;
+      z-index: 100;
+      li {
+        margin: 10px;
+        padding-right: 20px;
+
+        a {
+          color: $cfont_color;
+          font-weight: 700;
+          font-size: 15px;
+        }
+        a:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+  .respons {
+    visibility: hidden;
+    height: 0;
+  }
+  .drawer {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  header {
+    .navbar {
+      ul {
+        left: 650px;
       }
     }
   }
+}
+@media screen and (max-width: 769px) {
+  header {
+    .navbar {
+      ul {
+        left: 400px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  header {
+    .navbar {
+      ul {
+        margin-top: 0px;
+        left: 20px;
+        li {
+          padding-right: 0px;
+          margin: 0px;
+          a {
+            font-size: 6px;
+          }
+        }
+      }
+    }
+  }
+.header3{
+  position: relative;
+
+  ul{
+    li{
+      position: relative;
+      top: 60px;
+z-index: 500;
+    }
+  }
+}
 }

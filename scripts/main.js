@@ -47,14 +47,3 @@ $(window).scroll(function () {// スクロールしたら
   fadeIn();// 関数を実行
 });
 
-//ハンバーガー//
-sizecheck();
-$(function () {
-if (w > 769) {
-} else { 
-  $("header .drawer").click(function(){
-  $('body').toggleClass('nav-open');
-  $('header .navbar').fadeToggle(200);
-    });
-  }
-});

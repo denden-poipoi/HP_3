@@ -1,4 +1,3 @@
-
 .button {
   text-align: center;
 
@@ -7,13 +6,30 @@
     margin: 50px 0 120px 0;
     font-weight: bold;
     border: solid 2px;
-         color: $cwhite;
-     background-color: $cBlack;
+    color: $cwhite;
+    background-color: $cBlack;
   }
-   &_submit:hover {
-     color: $cBlack;
-     background-color: $cwhite;
-     transition: 0.2s;
-   }
-
+  &_submit:hover {
+    color: $cBlack;
+    background-color: $cwhite;
+    transition: 0.2s;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .button {
+    &_submit {
+      padding: 30px 120px;
+      margin: 50px 0 120px 0;
+      font-size: 30px;
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  .button {
+    &_submit {
+      padding: 13px 50px;
+      margin: 50px 0 120px 0;
+      font-size: 15px;
+    }
+  }
 }

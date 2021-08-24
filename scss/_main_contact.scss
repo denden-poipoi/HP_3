@@ -68,3 +68,75 @@ li {
     }
   }
 }
+@media screen and (max-width: 1025px) {
+  .bg {
+    width: 75vw;
+  }
+  .contact {
+    padding: 50px;
+
+    .form {
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+      div {
+        margin: 20px 0;
+        padding: 5px;
+        label {
+          display: inline-block;
+          text-align: left;
+          width: 100%;
+          font-size: 30px;
+        }
+        input {
+          width: 100%;
+          height: 80px;
+        }
+
+        textarea {
+          width: 100%;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  .bg {
+    width: 85vw;
+    padding-top: 70px;
+
+    .title{
+      display: unset;
+      @include main-title_respnsive;
+    }
+  }
+  .contact {
+    padding: 10px;
+
+    .form {
+      width: 100%;
+      display: block;
+      margin: 0px;
+      div {
+        margin: 20px 0;
+        padding: 5px;
+        label {
+          display: inline-block;
+          text-align: left;
+          width: 100%;
+          font-size: 30px;
+        }
+        input {
+          width: 100%;
+          height: 80px;
+        }
+
+        textarea {
+          width: 100%;
+          height: 200px;
+        }
+      }
+    }
+  }
+}

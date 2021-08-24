@@ -1,17 +1,17 @@
 body {
-@include body_base;
+  @include body_base;
   display: block;
 }
 
 a {
-@include a_base;
+  @include a_base;
 }
 
 li {
-@include li_base;
+  @include li_base;
 }
 .title {
-@include main-title;
+  @include main-title;
   margin-top: 60;
 }
 .seasons {
@@ -115,7 +115,7 @@ li {
     .slick-next:hover,
     .slick-next:focus {
       background-color: $cshadow;
-      color:$cwhite;
+      color: $cwhite;
     }
 
     .slick-prev:before {
@@ -153,4 +153,16 @@ footer div {
   height: 200px;
   width: 100%;
   background-color: $cwhite;
+}
+@media screen and (max-width: 376px) {
+  .title {
+    font-size: 75px;
+  }
+.autumn_ttl,.winter_ttl{
+  h4{
+    display: unset;
+    margin-left: 10px;
+    font-size: 50px;
+  }
+}
 }

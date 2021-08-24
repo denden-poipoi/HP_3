@@ -4,5 +4,17 @@ footer {
   width: 100%;
   margin: 0 auto;
   top: -30px;
-  z-index: 1;
+  z-index: 50;
+}
+
+@media screen and (max-width: 1025px) {
+  footer {
+    z-index: 50;
+  }
+}
+@media screen and (max-width: 376px) {
+  footer {
+    width: 97%;
+    z-index: 50;
+  }
 }
